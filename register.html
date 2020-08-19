@@ -1,0 +1,102 @@
+<html lang="en">
+  <head>
+    <style>
+      h1 {
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+      }
+      .container {
+        width: 400px;
+        height: auto;
+        margin: 0 auto;
+        border: 2px solid lightgrey;
+        padding: 0;
+        text-align: center;
+        display: block;
+        border-radius: 50px;
+      }
+      input {
+        border: none;
+        border-bottom: 2px solid lightgrey;
+        margin: 50px;
+        align: center;
+        overflow: hidden;
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+      }
+
+      input [type="checkbox"]:hover {
+        cursor: pointer;
+        background-color: lightgrey;
+      }
+
+      input[type="submit"] {
+        padding: 25px;
+        width: 40%;
+        border-bottom: none;
+        background-color: lightgray;
+        border-radius: 10px;
+      }
+      input[type="submit"]:hover {
+        padding: 25px;
+        width: 40%;
+        border-bottom: none;
+        background-color: gray;
+        cursor: pointer;
+      }
+
+      .Register {
+        margin: 50px;
+      }
+      .inputFields {
+        align: center;
+        padding: 10px;
+      }
+
+      label {
+        font-family: "Ubuntu", sans-serif;
+        text-align: center;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+  </head>
+  <body>
+    <h1 class="Register">Welcome</h1>
+    <div class="container">
+      <form method="post">
+        <div class="inputFields">
+          <input
+            type="text"
+            name="uname"
+            id="uname"
+            placeholder="Username"
+            required=""
+          />
+          <br />
+          <br />
+          <input
+            type="password"
+            name="passwd"
+            id="passwd"
+            placeholder="Password"
+            required=""
+          />
+
+          <input
+            type="password"
+            name="passwd_conf"
+            id="passwd"
+            placeholder="Confirm Password"
+            required=""
+          />
+
+          <br />
+
+          <input type="submit" text="Sign Up" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

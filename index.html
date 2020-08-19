@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <style>
+      h1 {
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+      }
+      h2 {
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+      }
+
+      .option {
+        margin: 100px;
+        text-align: center;
+      }
+
+      button {
+        width: 300px;
+        height: 50px;
+
+        background-color: whitesmoke;
+
+        border-radius: 50px;
+      }
+
+      button:hover {
+        background-color: lightgrey;
+        cursor: pointer;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{name}}'s Pannel</title>
+  </head>
+  <body>
+    <h1>What do you want to do today, {{name}} ?</h1>
+
+    <br />
+    <div class="option">
+      <h2>Upload a file</h2>
+      <button onclick='window.location.replace("/upload");'>Upload</button>
+    </div>
+
+    <hr />
+    <div class="option">
+      <h2>Download a file</h2>
+      <button onclick='window.location.replace("/download");'>Download</button>
+    </div>
+
+    <hr />
+
+    <div class="option">
+      <h2>Log Out</h2>
+      <button onclick='window.location.replace("/logout");'>Logout</button>
+    </div>
+  </body>
+</html>

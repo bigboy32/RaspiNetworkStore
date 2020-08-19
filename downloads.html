@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <style>
+      h1 {
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+      }
+      .lis {
+        text-align: center;
+        font-size: 20px;
+        font-family: "Ubuntu", sans-serif;
+      }
+      input {
+        border: none;
+        border-bottom: 2px solid lightgrey;
+        margin: 50px;
+        align: center;
+        overflow: hidden;
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Downloads</title>
+  </head>
+  <body>
+    <h1>Chose a File</h1>
+    <ol>
+      <div class="lis">
+        {%for item in items%}
+        <li>{{item}}</li>
+        <br />
+        {%endfor%}
+      </div>
+    </ol>
+
+    <form method="post">
+      <input
+        type="number"
+        placeholder="Item Number"
+        name="number"
+        id="number"
+      />
+    </form>
+  </body>
+</html>
